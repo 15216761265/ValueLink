@@ -191,6 +191,8 @@ body {
     padding:16px 40px 0;
 }
 .logo-box{
+    font-size: 30px;
+    letter-spacing: 3px;
     float: left;
     margin-top:8px;
 }
