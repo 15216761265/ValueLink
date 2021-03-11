@@ -8,7 +8,6 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="Keywords" content="萃领，萃领Trinity Advisory Company Limited，萃领咨询，萃领评估，萃领交易，萃领财务，财务，会计，法律，上市，融资，并购">
   <link href="../static/css/swiper.min.css" rel="stylesheet">
   <link href="../static/css/style-mob.css" rel="stylesheet" />
   <script type="text/javascript" src="../static/js/lc-autosize.js"></script>
@@ -237,9 +236,6 @@
       </div>
     </div>
     <div class="footer">
-      <div class="footer_copyRightTxt">
-        <p><a href="privacy_clause.html">隐私保护</a> &nbsp&nbsp | &nbsp&nbsp <a href="exemption_clause.html">免责条款</a></P>
-      </div>
       <div class="footer_logo">
         <p><img class="page1_logo" src="../static/picture/bottom_text.gif" /></p>
       </div>
@@ -248,17 +244,9 @@
           版权所有@2020 "萃领"、"Trinity Advisory Company Limited"、“亚洲评估”
         </p>
         <p>
-          及其标识归萃领管理咨询（北京）有限公司拥有。
+          及其标识归萃领企业咨询有限公司拥有。
         </p>
-        <div>
-          <p><a style="color:#939393" href="http://www.beian.miit.gov.cn" target="_blank">京ICP备17006781号-1</a></p>
-          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502032540"
-            style="display:inline-block;text-decoration:none;height:20px;line-height:20px;position: relative;top: 5px;"><img
-              src="../static/picture/mg_ico.png" style="float:left;" />
-            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备
-              11010502032540号</p>
-          </a>
-        </div>
+
       </div>
     </div>
   </div>
@@ -267,7 +255,7 @@
   <script src="../static/js/lc-app.js"></script>
   <script type="text/javascript">
     function getMoreNews(e, page, cate) {
-      $(e).closest('.tab-content').load('/api/front/newsitems?p=' + page + '&c=' + cate);
+      // $(e).closest('.tab-content').load('/api/front/newsitems?p=' + page + '&c=' + cate);
     }
 
     var newsList = {
@@ -286,37 +274,37 @@
         });
         this.scrollLoad();
       },
-      getList: function (attr) {
-        $.ajax({
-          url: '/api/front/newsitems',
-          type: "get",
-          data: {
-            p: attr.p,
-            c: attr.c + 1
-          },
-          success: function (d) {
-            if (d.indexOf('news-item-head') > -1) {
-              $('.tab-content').eq(newsList.c).append(d);
-              if (!$('#loadingBox').length) {
-                $('.news_content').append('<div id="loadingBox">加载中...</div>')
-              } else {
-                $('#loadingBox').html('加载中...');
-              }
-              newsList.p++;
-              newsList.isLoading = true;
-            } else {
-              if ($('#loadingBox').length) {
-                $('#loadingBox').remove();
-              }
-            }
+      // getList: function (attr) {
+      //   $.ajax({
+      //     url: '/api/front/newsitems',
+      //     type: "get",
+      //     data: {
+      //       p: attr.p,
+      //       c: attr.c + 1
+      //     },
+      //     success: function (d) {
+      //       if (d.indexOf('news-item-head') > -1) {
+      //         $('.tab-content').eq(newsList.c).append(d);
+      //         if (!$('#loadingBox').length) {
+      //           $('.news_content').append('<div id="loadingBox">加载中...</div>')
+      //         } else {
+      //           $('#loadingBox').html('加载中...');
+      //         }
+      //         newsList.p++;
+      //         newsList.isLoading = true;
+      //       } else {
+      //         if ($('#loadingBox').length) {
+      //           $('#loadingBox').remove();
+      //         }
+      //       }
 
-            if ((d.indexOf('news-item-head') < 0) && (newsList.p * 1 < 2)) {
-              $('#loadingBox').remove();
-              $('.tab-content').eq(newsList.p).html('<li style="text-align:center;padding: 5vw;">没有商品</li>');
-            }
-          }
-        });
-      },
+      //       if ((d.indexOf('news-item-head') < 0) && (newsList.p * 1 < 2)) {
+      //         $('#loadingBox').remove();
+      //         $('.tab-content').eq(newsList.p).html('<li style="text-align:center;padding: 5vw;">没有商品</li>');
+      //       }
+      //     }
+      //   });
+      // },
       scrollLoad: function () {
         $(window).scroll(function () {
           var bodyScrollTop = document.body.scrollTop,
@@ -336,9 +324,9 @@
     }
     $(function () {
       // $('.news_content').load('/api/front/news?m=1');
-      $('.news_content').load('/api/front/news?m=1', {}, function () {
-        $('.news_list_title').find('li').eq(1).trigger('click');
-      });
+      // $('.news_content').load('/api/front/news?m=1', {}, function () {
+      //   $('.news_list_title').find('li').eq(1).trigger('click');
+      // });
 
       newsList.init();
     });

@@ -156,7 +156,7 @@ var lcApp = {
 
     var wh = document.documentElement.clientWidth;
     var href = window.location.href;
-    var hah = '127.0.0.1:5501';
+    var hah = '47.117.127.101';
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       if (wh < 760) {
         if (href.indexOf(hah) >= 0 && href.indexOf('/mob') === -1) {
@@ -205,7 +205,7 @@ var lcApp = {
 
     function autoUrl() {
       var href = window.location.href;
-      var hah = '127.0.0.1:5501';
+      var hah = '47.117.127.101';
       if (href.indexOf(hah) >= 0) {
         if (loc == 'other' && href.indexOf('/en/') < 0) {
           if (href.indexOf('/mob/') >= 0) {
