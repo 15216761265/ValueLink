@@ -191,14 +191,13 @@ body {
     padding:16px 40px 0;
 }
 .logo-box{
-    font-size: 30px;
-    letter-spacing: 3px;
     float: left;
-    margin-top:8px;
+    margin-top:20px;
 }
 .logo-box img{
   width:112px;
 }
+
 .header-right{
     float: right;
     min-width: 600px;
@@ -503,15 +502,27 @@ body {
 }
 .footer.about-footer{
   height:auto;
-  background-color: #f7f7f7;
+  background-color: #fff;
   text-align: center;
   color: #333;
+  width:100%;
+  margin:auto;
 }
 .footer.about-footer a{
   color: #333;
 }
+.footer_logo{
+  width:90%;
+  margin:auto;
+  border-top:1px solid #d5d5d5;
+  display: flex;
+  justify-content: space-evenly;
+}
 .footer_logo p{
   line-height: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction:column-reverse;
 }
 .footer_logo img{
   width: 200px;
