@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link href="static/css/swiper.min.css" rel="stylesheet" />
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background: #fff;
+      cursor: -webkit-grab;
+      display: -ms-flexbox;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body class='about'>
+  <!-- 头部 -->
+  <div class='header'>
+    <div class='content clearfix'>
+      <!-- 头部logo -->
+      <div class='logo-box'>
+        <img src="static/picture/logo.png" alt="图裂了">
+      </div>
+      <!-- 头部右侧：搜索框+导航栏menu -->
+      <div class='header-right'>
+        <!-- 菜单 -->
+        <div class='menu-box clearfix' id='menu_item'>
+          <a class='lan-en' data-lan='en' data-href='/en/index.html'>EN</a>
+          <ul class="menu-item clearfix">
+            <li class="active"><a href="index.html">关于萃领</a></li>
+            <li><a href="service.html">专业服务</a></li>
+            <li><a href="team.html">专业团队</a></li>
+            <li><a href="news.html">萃领洞察</a></li>
+          </ul>
+          <div id='menu_line'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-container" style="margin-top:100px;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="static/picture/about_01.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/picture/about_02.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/picture/about_03.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/picture/about_04.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="section about-content container-box" style="padding-top:0px;">
+    <div class="container displayFlex">
+      <ul class="news-item clearfix" style="padding-bottom: 80px;width: 100%;overflow: hidden;">
+        <li style="width: 90%">
+          <dl>
+            <dt><img src="static/picture/about-consult.png"></dt>
+            <dd style="padding-left:8px;max-width:90%;">
+              <h3>萃领咨询</h3>
+              <h5>》萃领咨询是一家卓越的咨询公司，专注于为企业提供金融服务解决方案。我们提供广泛的财务、税务和合规解决方案，为客户提供从初创阶段到首次公开发行准备期及上市后的全程支持。
+              </h5>
+              <h5>》我们理解企业的价值。</h5>
+              <h5>》我们传递价值，我们创造价值，我们服务于价值。</h5>
+
+            </dd>
+          </dl>
+        </li>
+      </ul>
+      <ul class="news-item clearfix" style="padding-bottom: 80px;width: 100%;overflow: hidden;">
+        <li style="width: 90%">
+          <dl>
+            <dt><img src="static/picture/about-value.png"></dt>
+            <dd style="padding-left:8px;max-width:90%;">
+              <h3>公司价值</h3>
+              <h5>》我们重视量化方法在探索公司价值中的应用。
+              </h5>
+              <h5>》我们追求不断创新，以满足行业、市场和客户不断变化的需求。</h5>
+              <h5>》我们通过丰富的行业经验和专业知识开发解决方案。</h5>
+              <h5>
+                》萃领咨询致力于通过专业知识、创新和经验为客户提供最佳解决方案；我们不满足于交付方案，更致力于建立持久的关系，为客户提供真正的价值；我们致力于提供独一无二的客户体验；我们将充分利用公司的资源来实现最优结果。我们珍视、尊重和关爱彼此。
+              </h5>
+              <h5>》我们为每一个客户关带来全新的视角和感染力。我们强调团队合作，信任并接纳能够帮助客户把握机遇的各种意见，发展团队，赢得未来。通过共同努力，搭建起实现各种可能性的桥梁。
+              </h5>
+              <h5>》您可以充分信赖我们的能力、领悟力、一致性、透明度和专业操守。</h5>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer about-footer">
+    <div class="footer_logo">
+      <p><img src="static/picture/bottom_text.gif" alt=""></p>
+      <p><img src="static/picture/footer_logo.png" alt=""></p>
+    </div>
+    <div class="footer-conp">
+      Copyright @ 2021 上海萃领 Trinity Advisory Company Limited
+      <a href="https://beian.miit.gov.cn" target="_blank">沪ICP备2021010298号</a>
+    </div>
+  </div>
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/lc-app.js"></script>
+  <script type="text/javascript" src="static/js/menu_scroll.js"></script>
+  <script type="text/javascript" src="static/js/swiper.jquery.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: 6000,
+        effect: 'fade',
+        paginationClickable: true
+      });
+  </script>
+</body>
+
+</html>

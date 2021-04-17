@@ -178,7 +178,7 @@ body {
 .header {
   min-height: 90px;
   padding-bottom: 10px;
-  background: #505456;
+  background: #3f4d67;
   color: #fff;
   opacity: 1;
   /*background-color: transparent;*/
@@ -264,7 +264,7 @@ body {
   background-position: center center;
 }
 .menu-box {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .menu-item {
   float: right;
@@ -553,7 +553,7 @@ body {
 .footer_logo {
   width: 90%;
   margin: auto;
-  border-top: 1px solid #d5d5d5;
+  border-top: 1px solid #3f4d67;
   display: flex;
   justify-content: space-evenly;
 }
@@ -949,7 +949,7 @@ body {
 /*end suc*/
 /*team*/
 .border_bd {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #3f4d67;
   margin-top: 40px;
   margin-bottom: 20px;
 }

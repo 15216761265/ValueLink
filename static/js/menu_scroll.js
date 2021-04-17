@@ -111,7 +111,6 @@ window.onload = function () {
   var timer = null;
 
   var initLeft = oDiv.offsetLeft;
-  console.log(1111111, aLi, oDiv)
   for (var i = 0; i < aLi.length; i++) {
     aLi[i].onmouseover = function () {
       clearTimeout(timer);
