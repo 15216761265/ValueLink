@@ -4,38 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>首页</title>
+  <title>联系我们</title>
   <link rel="stylesheet" href="static/css/style.css">
-  <link href="static/css/swiper.min.css" rel="stylesheet" />
-  <style>
-    .about #menu_line {
-      left: 262px;
-    }
-
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .swiper-slide {
-      background: #fff;
-      cursor: -webkit-grab;
-      display: -ms-flexbox;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
 </head>
 
-<body class='index'>
+<body class='contact'>
   <!-- 头部 -->
   <div class='header'>
     <div class='content clearfix'>
@@ -46,11 +19,11 @@
       <div class='header-right'>
         <!-- 菜单 -->
         <div class='menu-box clearfix' id='menu_item'>
-          <a class='lan-en' data-lan='en' data-href='/en/index.html'>EN</a>
+          <a class='lan-en' data-lan='en' data-href='/en/contact.html'>EN</a>
           <ul class="menu-item clearfix">
-            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="index.html">首页</a></li>
             <li><a href="successful.html">成功案例</a></li>
-            <li><a href="contact.html">联系萃领</a></li>
+            <li class="active"><a href="contact.html">联系萃领</a></li>
             <li><a href="job.html">工作机会</a></li>
             <li><a href="about.html">关于萃领</a></li>
             <li><a href="service.html">专业服务</a></li>
@@ -63,24 +36,13 @@
     </div>
   </div>
   <div class="swiper-container" style="margin-top:100px;">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="static/picture/about_1.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="static/picture/about_2.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="static/picture/about_3.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="static/picture/about_4.jpg">
-      </div>
+    <div class="banner">
+      <img src="static/picture/about_3.jpg">
     </div>
   </div>
   <div class="section about-content container-box" style="padding-top:0px;">
     <div class="container displayFlex">
-      首页内容
+      成功案例
     </div>
   </div>
 
@@ -98,16 +60,6 @@
   <script src="static/js/lc-app.js"></script>
   <script type="text/javascript"
     src="static/js/menu_scroll.js"></script>
-  <script type="text/javascript"
-    src="static/js/swiper.jquery.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      loop: true,
-      autoplay: 6000,
-      effect: 'fade',
-      paginationClickable: true
-    });
-  </script>
 </body>
 
 </html>

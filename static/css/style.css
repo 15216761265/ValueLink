@@ -1687,25 +1687,25 @@ body {
   position: absolute;
 }
 .about #menu_line {
-  left: 262px;
+  left: 328px;
 }
 .service #menu_line {
-  left: 341px;
+  left: 407px;
 }
 .successful #menu_line {
-  left: 248px;
+  left: 87px;
 }
 .team #menu_line {
-  left: 422px;
-}
-.contact #menu_line {
-  left: 408px;
-}
-.job #menu_line {
   left: 488px;
 }
+.contact #menu_line {
+  left: 167px;
+}
+.job #menu_line {
+  left: 247px;
+}
 .news #menu_line {
-  left: 505px;
+  left: 568px;
 }
 
 .news .container-newsDetail > div {

@@ -3,38 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title>Contact</title>
   <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0, maximum-scale=2, user-scalable=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no" />
   <link href="../static/css/style.css" rel="stylesheet" />
-  <link href="../static/css/swiper.min.css" rel="stylesheet" />
-  <style type="text/css">
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .swiper-slide {
-      background: #fff;
-      cursor: -webkit-grab;
-      display: -ms-flexbox;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
 </head>
 
-<body class="index">
+<body class="contact">
   <div class="header">
     <div class="content clearfix">
       <div class="logo-box">
@@ -42,11 +19,11 @@
       </div>
       <div class="header-right">
         <div class="menu-box clearfix" id="menu_item">
-          <a data-href="/index.html" data-lan="zh" class="lan-en">中文</a>
+          <a data-href="/contact.html" data-lan="zh" class="lan-en">中文</a>
           <ul class="menu-item clearfix">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="successful.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
             <li><a href="job.html">Career</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="service.html">Services</a></li>
@@ -59,25 +36,14 @@
     </div>
   </div>
   <div class="swiper-container" style="margin-top:100px;">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="../static/picture/about_1.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="../static/picture/about_2.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="../static/picture/about_3.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="../static/picture/about_4.jpg">
-      </div>
+    <div class="banner">
+      <img src="../static/picture/about_3.jpg">
     </div>
   </div>
   <div class="section about-content container-box" style="padding-top:0px;">
     <div class="container">
       <div class="container displayFlex">
-        Index
+        Contact
       </div>
     </div>
     <div class="footer about-footer">
@@ -94,15 +60,6 @@
     <script src="../static/js/lc-app.js"></script>
     <script type="text/javascript"
       src="../static/js/menu_scroll.js"></script>
-    <script type="text/javascript" src="static/js/swiper.jquery.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: 6000,
-        effect: 'fade',
-        paginationClickable: true
-      });
-    </script>
 </body>
 
 </html>
