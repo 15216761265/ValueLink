@@ -742,7 +742,7 @@ html.ac-gn-noscroll body {
 }
 .service-body-title {
   font-size: 18px;
-  padding: 36px 0 20px;
+  padding: 0px 0 20px;
 }
 .team-content-box .service-body-title:nth-child(2),
 .team-content-box .service-body-title:nth-child(3) {
@@ -970,6 +970,10 @@ html.ac-gn-noscroll body {
 /* .lc-contact-lc{
   background-color: #f5f5f5;
 } */
+.contact-us {
+  padding: 20px;
+  font-size: 15px;
+}
 .contact-top {
   padding: 10px 0 36px;
 }
@@ -1021,6 +1025,9 @@ html.ac-gn-noscroll body {
   padding: 26px 0 8px;
 }
 /*job*/
+.career {
+  padding: 0px 20px;
+}
 .lc-job-list {
   line-height: 1.6;
   padding-bottom: 26px;
@@ -1045,7 +1052,7 @@ html.ac-gn-noscroll body {
 .lc-job-list:last-child {
   border: none;
 }
-.lc-job-con p {
+.lc-job-career p {
   padding: 0px 0 10px;
 }
 .lc-contact-lc.lc-job-body {

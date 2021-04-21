@@ -3,9 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title>联系我们</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="static/css/style.css">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=XV7DBXByHvhvFWlKIuBKPhnTsi8Llex5"></script>
+  <style>
+    #container{
+      width:100%;
+      height:80vh;
+    }
+  </style>
 </head>
 
 <body class='contact'>
@@ -37,12 +46,16 @@
   </div>
   <div class="swiper-container" style="margin-top:100px;">
     <div class="banner">
-      <img src="static/picture/about_7.jpeg">
+      <img src="static/picture/about_7.jpg">
     </div>
   </div>
-  <div class="section about-content container-box" style="padding-top:0px;">
-    <div class="container displayFlex">
-      成功案例
+  <div class="section about-content container-box container" style="padding-top:0px;">
+    <div class="contact-us">
+      <div class="contact-us-info">
+        <div>地址：上海市奉贤区望园南路2288弄1号412室</div>
+        <div>电话：12345678909</div>
+      </div>
+      <div id="container"></div>
     </div>
   </div>
 
@@ -60,6 +73,25 @@
   <script src="static/js/lc-app.js"></script>
   <script type="text/javascript"
     src="static/js/menu_scroll.js"></script>
+  <script type="text/javascript">
+    var map = new BMap.Map("container");
+    // 创建地图实例 
+    var point = new BMap.Point(121.485, 30.928);
+    // 创建点坐标 
+    map.centerAndZoom(point, 15);
+    var marker = new BMap.Marker(point);        // 创建标注    
+    map.addOverlay(marker);
+    var label = new BMap.Label('上海萃领管理咨询有限公司', {
+        offset: new BMap.Size(-70, 1),
+        position:point
+      });
+    label.setStyle({
+      border:'1px solid #000',
+      cursor:'pointer'
+    })
+    label.setTitle("上海萃领")
+    map.addOverlay(label)
+  </script>
 </body>
 
 </html>

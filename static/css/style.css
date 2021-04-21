@@ -16,7 +16,7 @@ html {
 }
 img {
   display: block;
-  max-width: 100% !important;
+  /* max-width: 100% !important; */
 }
 .hide {
   display: none !important;
@@ -315,8 +315,14 @@ body {
 .container {
   /*width: 1200px;*/
   width: 90%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
+.index .container .introduce {
+  font-size: 18px;
+  text-indent: 2em;
+  margin-top: 20px;
+}
+
 .body-con .body-con-header {
   position: relative;
   text-align: center;
@@ -518,9 +524,6 @@ body {
   -webkit-line-clamp:3;
   -webkit-box-orient: vertical;*/
 }
-.about-content .news-item {
-  padding: 70px 0 0px 0;
-}
 .about-content .news-item dt img {
   border: none;
 }
@@ -589,11 +592,18 @@ body {
   height: 480px;
   background:#308cde url(../images/pic1.jpg) no-repeat top center;
 }*/
-.contact-top li {
-  float: left;
-  line-height: 2em;
-  width: 30.3%;
-  margin-right: 3%;
+
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+.contact-us .contact-us-info {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.contact-us .contact-us-info div {
+  margin-bottom: 10px;
 }
 
 .contact-top .contact-last-li {
@@ -667,8 +677,7 @@ body {
 
 /*job*/
 .lc-job-body {
-  padding: 40px 40px;
-  border-top: 1px solid #e5e5e5;
+  padding: 20px 0px;
 }
 .lc-job-body h4 {
   font-size: 16px;
@@ -707,7 +716,6 @@ body {
 }
 /*service*/
 .service-content {
-  padding: 30px 0;
   /*width: 1000px;*/
   margin: 0 auto;
 }
@@ -1134,6 +1142,17 @@ body {
 .lc-contact-lc.lc-job-body {
   padding-bottom: 25px;
 }
+.job .box {
+  display: flex;
+  justify-content: space-around;
+}
+.job .box_body {
+  width: 30%;
+  background-color: #eaeaea;
+  margin: 10px;
+  padding: 16px;
+  border-radius: 5px;
+}
 @media only screen and (max-width: 374px) {
   .lc-lxr-list li {
     float: none;
@@ -1150,7 +1169,7 @@ body {
 .news_list_title {
   font-size: 16px;
   /*background-color: #fff;*/
-  padding: 30px 0 10px;
+  padding: 0px 0 10px;
   margin: 0 auto;
 }
 .news_list_title li {
