@@ -4,32 +4,27 @@
 <head>
   <meta charset="utf-8">
   <title>Home</title>
+  <link rel="icon" href="../static/picture/favicon.ico" type="image/x-icon" />
   <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0, maximum-scale=2, user-scalable=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no" />
-  <link href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/css/style.css" rel="stylesheet" />
-  <link href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/css/swiper.min.css" rel="stylesheet" />
+  <link href="../static/css/style.css" rel="stylesheet" />
   <style type="text/css">
+    .index #menu_line{
+      left:15px;
+    }
     .swiper-container {
       width: 100%;
       height: 100%;
       margin-left: auto;
       margin-right: auto;
     }
-
-    .swiper-slide {
-      background: #fff;
-      cursor: -webkit-grab;
-      display: -ms-flexbox;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
+    .logo-box{
+      margin-top:10px;
+    }
+    .logo-box img{
+      width:170px;
     }
   </style>
 </head>
@@ -38,20 +33,20 @@
   <div class="header">
     <div class="content clearfix">
       <div class="logo-box">
-        <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/logo_en.png">
+        <img src="../static/picture/logo_en.png">
       </div>
       <div class="header-right">
         <div class="menu-box clearfix" id="menu_item">
           <a data-href="/index.html" data-lan="zh" class="lan-en">中文</a>
           <ul class="menu-item clearfix">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="successful.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="job.html">Career</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="service.html">Services</a></li>
             <li><a href="team.html">Team</a></li>
+            <li><a href="successful.html">Experience</a></li>
             <li><a href="news.html">Insight</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="job.html">Career</a></li> -->
           </ul>
           <div id="menu_line"></div>
         </div>
@@ -59,19 +54,8 @@
     </div>
   </div>
   <div class="swiper-container" style="margin-top:100px;">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/banner01.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/banner02.jpeg">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/about_1.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/about_2.jpg">
-      </div>
+    <div class="banner">
+      <img src="../static/picture/banner-index-en.jpg">
     </div>
   </div>
   <div class="section about-content container-box" style="padding-top:0px;">

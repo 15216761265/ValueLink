@@ -590,6 +590,15 @@ html.ac-gn-noscroll body {
   -webkit-transition: -webkit-transform 300ms ease;
   transition: transform 300ms ease;
 }
+.cicleStyle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  line-height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-right: 5px;
+}
 /*end 首页*/
 /*footer*/
 .footer {
