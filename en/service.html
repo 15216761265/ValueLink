@@ -4,13 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>Services</title>
-  <link rel="icon" href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/favicon.ico"
+    type="image/x-icon">
   <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0, maximum-scale=2, user-scalable=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no" />
-  <link href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/css/style.css" rel="stylesheet" />
+  <link href="../static/css/style.css" rel="stylesheet" />
   <style type="text/css">
+    @font-face {
+      font-family: Montserrat;
+      src: url(../static/css/Montserrat-Medium-7.otf);
+    }
+    body{font-family: Montserrat;}
     .home-body-item {
       padding: 60px 0 40px;
     }
@@ -41,8 +47,15 @@
       margin: 10px auto 25px;
     }
 
-    .service #menu_line{
-      left:175px;
+    .service #menu_line {
+      left: 175px;
+    }
+
+    .logo-box{
+      margin-top: 7px;
+    }
+    .logo-box img{
+      width:200px;
     }
   </style>
 </head>
@@ -56,15 +69,15 @@
       <div class="header-right">
         <div class="menu-box clearfix" id="menu_item">
           <a data-href="/service.html" data-lan="zh" class="lan-en">中文</a>
-            <ul class="menu-item clearfix">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li class="active"><a href="service.html">Services</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="successful.html">Experience</a></li>
-              <li><a href="news.html">Insight</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <!-- <li><a href="job.html">Career</a></li> -->
+          <ul class="menu-item clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="active"><a href="service.html">Services</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="successful.html">Experience</a></li>
+            <li><a href="news.html">Insight</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="job.html">Career</a></li> -->
           </ul>
           <div id="menu_line"></div>
         </div>
@@ -74,7 +87,8 @@
 
   <div class="container-box">
     <div class="banner">
-      <img class="page3_pic1" src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/banner-service-en.jpg" />
+      <img class="page3_pic1"
+        src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/banner-service-en.jpg" />
     </div>
     <div class="container">
       <div class="service-content">
@@ -82,26 +96,21 @@
           <div class="lc-service-list">
             <a name="service1"></a>
             <div class="service-body-title">
-              <img class="" src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/service.png" />Our financial advisory services:
+              <img class="" src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/service.png" />Our
+              Solutions:
             </div>
             <div class="service-body-t-p">
-              <div class="cicleStyle"></div>Include a highly effective, results-based approach to formulating, advising, and developing solutions
-              at all aspects.
+              <div class="cicleStyle"></div>During the course of development, a business may encounter various financial
+              decisions with respect to accounting,
+              acquisition and disposal of assets, capital markets, and legal disputes. We understand that valuation
+              always pose
+              challenges. Thus, we provide tailored solutions targeting our client’s business objectives, achieving
+              measurable
+              results, and deploying exceptional professional skills.
               <br />
-              <div class="cicleStyle"></div>We use a data-driven approach to help businesses maximize business value by understanding and
-              evaluating opportunities
-              and risks.
-              <br />
-              <div class="cicleStyle"></div>Advise our clients on where the values originate and how to generate value opportunities.
-              <br />
-              <div class="cicleStyle"></div>We combine analytical and creative processes to convert data that reveal the underlying value of
-              businesses.
-              <br />
-              <div class="cicleStyle"></div>Provide tailored solutions targeting our client’s business objectives, achieving measurable results,
-              and deploying
-              exceptional professional skills.
-              <br />
-              <div class="cicleStyle"></div>We focus on particular issues at every stage of your business.
+              <div class="cicleStyle"></div>We employ a highly effective, results-based approach in formulating,
+              advising and developing solutions in all aspects.
+              We provide professional services to assist our client in every stage of development and long-term growth.
               <br />
             </div>
             <!-- <div class="pinggu-item">
@@ -195,28 +204,25 @@
                   <div class="service-item-pic">
                     <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/service_item1.jpg" alt="">
                   </div>
+                  <button id="service-item-1-btn">LEARN MORE</button>
                   <div class="service-item-content" id='service-item-1-content'>
                     <div class="service-item-content-title">Financial reporting</div>
                     <div>
-                      <div class="cicleStyle"></div>Whether you are in need of an opinion on ESO value, or facing difficulties with allocation of
-                      intangibles and goodwill,
-                      or a just a few steps to IPO, we shall be a supportive advisor.<br />
-                      <div class="cicleStyle"></div>Our financial valuation team will assist you to overcome
-                      today’s financial reporting challenges.<br />
-                      <div class="cicleStyle"></div>Our valuation services are structured to address your
-                      business’s financial reporting needs:<br />
-                      <ul>
-                        <li>employee share options</li>
-                        <li>purchase price allocation and
-                        intangible assets</li>
-                        <li>goodwill and long-term asset
-                        impairment test</li>
-                        <li>financial instruments</li>
-                        <li>portfolio valuation</li>
-                      </ul>
-                      <div class="cicleStyle"></div>We are trusted partners to major local and international
-                      auditors. Our dedication to full-range financial valuation
-                      services defines who we are as a professional services firm.<br />
+                      In Trinity, we offer a wide range of valuation advisory services for financial reporting or IPO related valuation
+                      issues. Our financial valuation team will assist you to overcome today’s financial reporting challenges. Trinity’s
+                      valuation services are structured to address your business’s financial reporting needs with the following key aspects:<br />
+                      <div class="cicleStyle"></div>Equity valuation<br />
+                      <div class="cicleStyle"></div>Employee share option valuation<br />
+                      <div class="cicleStyle"></div>Purchase price allocation and intangible assets valuation<br />
+                      <div class="cicleStyle"></div>Impairment tests of goodwill and long-term assets<br />
+                      <div class="cicleStyle"></div>Financial instruments valuation<br />
+                      <div class="cicleStyle"></div>Portfolio valuation<br />
+                      <div class="cicleStyle"></div>Property and fixed asset valuation<br />
+                      <div class="cicleStyle"></div>Incremental borrowing rate determination<br />
+                      <div class="cicleStyle"></div>Expected credit loss analysis<br />
+                      <div class="cicleStyle"></div>Hedging effectiveness analysis<br />
+                      We are trusted partners to major local and international auditors. Our dedication to full-range financial valuation
+                      services defines who we are as a professional services firm.
                     </div>
                   </div>
                 </li>
@@ -224,15 +230,20 @@
                   <div class="service-item-pic">
                     <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/service_item2.jpg" alt="">
                   </div>
+                  <button id="service-item-2-btn">LEARN MORE</button>
                   <div class="service-item-content" id='service-item-2-content'>
                     <div class="service-item-content-title">Transaction Opinions</div>
                     <div>
-                      <div class="cicleStyle"></div>Trinity Advisory understands that competent transaction opinions will facilitate a successful
-                      M&A process in the aspects
-                      of time, cost and management easiness.<br />
-                      <div class="cicleStyle"></div>Our transaction opinions services premise on our deep industry
-                      expertise and can help your company to clear challenges
-                      in your M&A process.<br />
+                      <div class="cicleStyle"></div>A competent transaction opinion facilitates a successful M&A process in the aspects of time, cost and management
+                      easiness. Trinity’s transaction opinions services premise on our deep industry expertise and can help your company to
+                      clear challenges in your M&A process. The rapid decision process poses pressures on management to beat demanding
+                      schedules. Also, converting the financial impact of various decisions and terms in contracts into numerical terms can
+                      facilitate a successful outcome. We have experienced experts seeking to deliver timely, comprehensive and flexible
+                      transaction advisory solutions to our client.<br />
+                      <div class="cicleStyle"></div>We work with you to provide decision support to maximize the value from a transaction. Your company needs reliable and
+                      specific intelligence about business values and financial impacts to take informed decisions about the deals. We drill
+                      down to obtain every critical numbers through research, industry experience, and cutting-edge models, coupled with
+                      superb analysis, so that you can support your internal stakeholders and their critical decisions with confidence.<br />
                     </div>
                   </div>
                 </li>
@@ -240,21 +251,17 @@
                   <div class="service-item-pic">
                     <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/service_item3.jpg" alt="">
                   </div>
+                  <button id="service-item-3-btn">LEARN MORE</button>
                   <div class="service-item-content" id='service-item-3-content'>
                     <div class="service-item-content-title">Litigation Support Services</div>
                     <div>
                       <div class="cicleStyle"></div>
-                      Parties in litigation process often need professional level financial and valuation expertise
-                      to assist and support
-                      their unique needs. Our experts provide professional analysis and opinions to increase the
-                      chance of success. We
-                      communicate ideas and views in plain language, without complex financial terminology, and
-                      support our client to fully
+                      Parties in litigation process often need professional level financial and valuation expertise to assist and support
+                      their unique needs. Our experts provide professional analysis and opinions to increase the chance of success. We
+                      communicate ideas and views in plain language, without complex financial terminology, and support our client to fully
                       understand our ideas and analysis.<br />
-                      <div class="cicleStyle"></div>Our litigation support specialists will work with our clients throughout the financial
-                      analysis process, developing all
-                      the required documents, getting feedback from our client’s legal consultants and provide
-                      various insights and angles to
+                      <div class="cicleStyle"></div>Our litigation support specialists will work with our clients throughout the financial analysis process, developing all
+                      the required documents, getting feedback from our client’s legal consultants and provide various insights and angles to
                       ease the litigation process.<br />
                     </div>
                   </div>
@@ -267,11 +274,11 @@
     </div>
     <div class="footer about-footer">
       <div class="footer_logo">
-        <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/bottom_text_en.gif" alt=""></p>
+        <!-- <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/bottom_text_en.gif" alt=""></p> -->
         <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/footer_logo.png" alt=""></p>
       </div>
       <div class="footer-conp">
-        Copyright @ 2021 上海萃领 Trinity Advisory Company Limited
+        Copyright @ 2021 上海萃领管理咨询有限公司 Trinity Advisory Company Limited
         <a href="https://beian.miit.gov.cn" target="_blank">沪ICP备2021010298号</a>
       </div>
     </div>
@@ -300,13 +307,25 @@
     //   return null;
     // }
     $(function () {
-        const serviceHeight = $('.service-item').width() * 0.33;
-        const topHeight = serviceHeight - 40
-        $('.service-item').height(serviceHeight)
-        $('.service-item-content').css('top', topHeight + 'px')
-      })
+      const serviceHeight = $('.service-item').width() * 0.33;
+      const topHeight = serviceHeight - 40
+      $('.service-item').height(serviceHeight)
+      $('.service-item-content').css('top', topHeight + 'px')
+    })
+    $(document).ready(function () {
+        $("#service-item-1-btn").click(function () {
+          $('#service-item-1-content').css('top', '5px')
+        });
+        $("#service-item-2-btn").click(function () {
+          $('#service-item-2-content').css('top', '5px')
+        });
+        $("#service-item-3-btn").click(function () {
+          $('#service-item-3-content').css('top', '5px')
+        });
+      });
   </script>
-  <script type="text/javascript" src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/menu_scroll.js"></script>
+  <script type="text/javascript"
+    src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/menu_scroll.js"></script>
 </body>
 
 </html>

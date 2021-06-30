@@ -4,15 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>About us</title>
-  <link rel="icon" href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/favicon.ico"
+    type="image/x-icon" />
   <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0, maximum-scale=2, user-scalable=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no" />
-  <link href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/css/style.css" rel="stylesheet" />
+  <link href="../static/css/style.css" rel="stylesheet" />
   <style>
-    .about #menu_line{
-      left:96px;
+    @font-face {
+      font-family: Montserrat;
+      src: url(../static/css/Montserrat-Medium-7.otf);
+    }
+    body{font-family: Montserrat;}
+    .team-list-dl dd p {
+      padding-right: 90px;
+    }
+    .about #menu_line {
+      left: 96px;
+    }
+    .logo-box{
+      margin-top: 7px;
+    }
+    .logo-box img{
+      width:200px;
     }
   </style>
 </head>
@@ -53,13 +68,22 @@
           <dl>
             <dt><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/about-consult.png"></dt>
             <dd style="padding-left:8px;max-width:90%;">
-              <div style="font-size: 18px;">About Trinity Advisory</div>
+              <div style="font-size: 18px;">Why choose us:</div>
               <div style="font-size: 15px;margin-bottom: 10px;">
                 <div class="cicleStyle"></div>
-                Trinity Advisory is a premier consulting practice focused on providing financial service solutions
-                to corporations. We offer a broad range of finance, tax and compliance solutions to support clients
-                from the startup phase all the way to
-                IPO readiness and beyond.
+                Valuation and due diligence are not mysterious topics nowadays. What makes Trinity Advisory different from other
+                valuation service advisors is our excellent quality of work. We believe "Power of Quality". Only through delivering high
+                quality of work to our clients can we enhance our clients' confidence on making right business decision, increase their
+                negotiating power against counterparties and narrow unexpected outcomes. Quality of work is dependent on competency of
+                execution team. We encountered cases that big international valuation services advisors failed to handle large scale
+                projects and guarantee work quality because they often run a small regional team in China. Trinity Advisory understands
+                the importance of human capital. We differentiate from other valuation advisory providers by acquiring top professions
+                in the industry, properly incentzing our human assets and avoid overloading them to produce the best quality of work
+                within the industry.<br />
+                <div class="cicleStyle"></div>Business and economy are changing unprecedentedly fast. While some valuation advisory providers which tend to focus on
+                completing project and ignore knowledge development, Trinity Advisory emphasizes on learning. Our experts frequently
+                interact with other industry experts and academics. We closely stick to market and pursue continuous innovation to match
+                the changing needs of industry, market and customers.<br />
               </div>
               <!-- <div style="font-size: 15px;margin-bottom: 10px;"><div class="cicleStyle"></div>We know about values in enterprise.</div>
               <div style="font-size: 15px;margin-bottom: 10px;"><div class="cicleStyle"></div>We deliver values, we create values, we advise on values.</div> -->
@@ -74,25 +98,16 @@
             <dt><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/about-value.png"></dt>
             <dd style="padding-left:8px;max-width:90%;">
               <div style="font-size: 18px;">Company value</div>
-              <div style="font-size: 15px;margin-bottom:10px;"><div class="cicleStyle"></div>We appreciate the application of numerical methods to explore values in companies.</div>
-              <div style="font-size: 15px;margin-bottom:10px;"><div class="cicleStyle"></div>We pursue continuous innovation to match the changing needs of industry, market and customers.</div>
               <div style="font-size: 15px;margin-bottom:10px;">
-                <div class="cicleStyle"></div>We develop ideas and solutions through our experience and expertise.
+                <div class="cicleStyle"></div>Trinity Advisory is committed to provide the best solutions to our clients via expertise, innovation and experience. We
+                are dedicated to building lasting relationships and delivering real value to our clients –not simply completing
+                projects. We are committed to providing a unique and satisfying client experience; we leverage the total resources of
+                our firm to achieve the best possible outcomes. We value, respect, and take care of one another. We bring a fresh
+                perspective and infectious energy to every client relationship. Our emphasis on teamwork, trust and tolerance for
+                diverging opinions helps clients focus on their opportunities, build their capabilities and win the future. Together, we
+                achieve results that bridge what is with what can be. You can count on us for competence, understanding, consistency,
+                transparency, and integrity.
               </div>
-              <div style="font-size: 15px;margin-bottom:10px;"><div class="cicleStyle"></div>Trinity Advisory is committed to provide the best solutions to our clients via expertise,
-                innovation and experience. We
-                are dedicated to building lasting relationships and delivering real value to our clients –not simply
-                completing
-                projects. We are committed to providing a unique and satisfying client experience; we leverage the
-                total resources of
-                our firm to achieve the best possible outcomes. We value, respect, and take care of one another.
-              </div>
-              <div style="font-size: 15px;margin-bottom:10px;"><div class="cicleStyle"></div>We bring a fresh perspective and infectious energy to every client relationship. Our emphasis on
-                teamwork, trust and
-                tolerance for diverging opinions helps clients focus on their opportunities, build their capabilities
-                and win the
-                future. Together, we achieve results that bridge what is with what can be.</div>
-              <div style="font-size: 15px;margin-bottom:10px;"><div class="cicleStyle"></div>You can count on us for competence, understanding, consistency, transparency, and integrity.</div>
             </dd>
           </dl>
         </li>
@@ -100,17 +115,18 @@
     </div>
     <div class="footer about-footer">
       <div class="footer_logo">
-        <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/bottom_text_en.gif" alt=""></p>
+        <!-- <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/bottom_text_en.gif" alt=""></p> -->
         <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/footer_logo.png" alt=""></p>
       </div>
       <div class="footer-conp">
-        Copyright @ 2021 上海萃领 Trinity Advisory Company Limited
+        Copyright @ 2021 上海萃领管理咨询有限公司 Trinity Advisory Company Limited
         <a href="https://beian.miit.gov.cn" target="_blank">沪ICP备2021010298号</a>
       </div>
     </div>
     <script src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/jquery.min.js"></script>
     <script src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/lc-app.js"></script>
-    <script type="text/javascript" src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/menu_scroll.js"></script>
+    <script type="text/javascript"
+      src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/menu_scroll.js"></script>
 </body>
 
 </html>

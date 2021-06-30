@@ -4,18 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>Our team</title>
-  <link rel="icon" href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/favicon.ico"
+    type="image/x-icon">
   <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0, maximum-scale=2, user-scalable=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no" />
-  <link href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/css/style.css" rel="stylesheet" />
+  <link href="../static/css/style.css" rel="stylesheet" />
   <style>
+    @font-face {
+      font-family: Montserrat;
+      src: url(../static/css/Montserrat-Medium-7.otf);
+    }
+    body{font-family: Montserrat;}
     .team-list-dl dd p {
       padding-right: 90px;
     }
-    .team #menu_line{
-      left:256px;
+
+    .team #menu_line {
+      left: 256px;
+    }
+    .logo-box{
+      margin-top: 7px;
+    }
+    .logo-box img{
+      width:200px;
     }
   </style>
 </head>
@@ -93,25 +106,26 @@
       </div>
       <div class="container border_bd"></div> -->
       <div class="team_td_list" style="border-right:1px solid #3f4d67;width:30%;">
-          <div class="service-body-title" style='margin-top:0px;'>
-            <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/team-people.png" />Core Management Team
+        <div class="service-body-title" style='margin-top:0px;'>
+          <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/team-people.png" />Core Management
+          Team
+        </div>
+        <div class="home-text-item clearfix">
+          <div class="lc-directory-column-section">
+            <label for="lc-pgtd-input-1">
+              <dl class="team-list-dl">
+                <dt>
+                  <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/teampeople.jpg" />
+                </dt>
+                <dd>
+                  <p>Jay Lam</p>
+                  <p>Managing Partner</p>
+                </dd>
+              </dl>
+            </label>
+            <span class=""></span>
           </div>
-          <div class="home-text-item clearfix">
-              <div class="lc-directory-column-section">
-                <label for="lc-pgtd-input-1">
-                  <dl class="team-list-dl">
-                    <dt>
-                      <img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/teampeople.jpg" />
-                    </dt>
-                    <dd>
-                      <p>Jay Lam</p>
-                      <p>Managing Partner</p>
-                    </dd>
-                  </dl>
-                </label>
-                <span class=""></span>
-              </div>
-          </div>
+        </div>
         <!-- <div class="personal_profile">
           <div class="team-content">
             <div class="per_pro_list ">
@@ -133,36 +147,31 @@
         <div class="service-body-title" style='margin-top:0px;'>
           <img src="/static/picture/about-value.png" />Team values
         </div>
-        <div style="font-size: 15px;">
-          <div>
-            <div class="cicleStyle"></div>
-            In Trinity Advisory, we have industry veterans and professionals with deep expertise in financial valuation,
-            tax
-            matters, and compliance. Our leadership team consists of many Big Four alums and industry experts, who have
-            helped build
-            and grow corporations in all stages.
+        <div>
+          <div style="text-indent: 2em;">
+            In Trinity Advisory, we have industry veterans and professionals with deep expertise in financial valuation, tax
+            matters, and compliance. Our leadership team consists of many Big Four alums and industry experts, who have helped build
+            and grow corporations in all stages. We deliver the highest-caliber advice using only seasoned professionals. This
+            guarantees our clients that they receive nothing short of the experience, focus, and individual service they deserve. We
+            adhere to the highest ethical standards. Our clients know they are receiving the best available counsel and service from
+            an experienced team of valuation professionals.
           </div>
-          <div>
-            <div class="cicleStyle"></div>Our teams put our clients first, with a relentless focus on championing bold ideas that help them achieve
-            growth and
-            business targets. In Trinity, you will find passionate, collaborative people who care for you and your
-            success.
+          <div style="text-indent: 2em;">Our teams put our clients first, with a relentless focus on championing bold ideas that help them achieve growth and
+            business targets. In Trinity, you will find passionate, collaborative people who care for you and your success.
           </div>
-          <div>
-            <div class="cicleStyle"></div>Trinity Advisory adopts plain management hierarchy. We treat our people as family, with a commitment to
-            enhancing their
-            lives and their futures.
+          <div style="text-indent: 2em;">Trinity Advisory adopts plain management hierarchy. We treat our people as family, with a commitment to enhancing their
+            lives and their futures. Together we form a team that covers all the competencies to create quality and value.
           </div>
         </div>
       </div>
     </div>
     <div class="footer about-footer">
       <div class="footer_logo">
-        <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/bottom_text.gif" alt=""></p>
+        <!-- <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/bottom_text.gif" alt=""></p> -->
         <p><img src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/picture/footer_logo.png" alt=""></p>
       </div>
       <div class="footer-conp">
-        Copyright @ 2021 上海萃领 Trinity Advisory Company Limited
+        Copyright @ 2021 上海萃领管理咨询有限公司 Trinity Advisory Company Limited
         <a href="https://beian.miit.gov.cn" target="_blank">沪ICP备2021010298号</a>
 
       </div>
@@ -170,7 +179,8 @@
   </div>
   <script src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/jquery.min.js"></script>
   <script src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/lc-app.js"></script>
-  <script type="text/javascript" src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/menu_scroll.js"></script>
+  <script type="text/javascript"
+    src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/menu_scroll.js"></script>
 </body>
 
 </html>
