@@ -11,6 +11,7 @@
   <link href="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/css/style-mob.css" rel="stylesheet" />
   <script type="text/javascript"
     src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/lc-autosize.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=XV7DBXByHvhvFWlKIuBKPhnTsi8Llex5"></script>
   <style type="text/css">
     .about_content p {
       padding: 10px 16px 10px;
@@ -19,6 +20,12 @@
       width: 120px;
       top:9px;
       margin-left:-55px;
+    }
+    #container{
+      width:90%;
+      height:200px;
+      margin:auto;
+      margin-top:20px;
     }
   </style>
 </head>
@@ -84,6 +91,7 @@
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+86 21 6012 6932</div>
         <div>Email：inquiry@trinity-advisory.com</div>
       </div>
+      <div id="container"></div>
     </div>
     <div class="footer">
       <div class="footer_logo">
@@ -100,6 +108,25 @@
   </div>
   <script src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/jquery.min.js"></script>
   <script src="https://shuchun.oss-cn-shanghai.aliyuncs.com/cdn/static/js/lc-app.js"></script>
+  <script type="text/javascript">
+    var map = new BMap.Map("container");
+    // 创建地图实例 
+    var point = new BMap.Point(121.484, 31.234);
+    // 创建点坐标 
+    map.centerAndZoom(point, 15);
+    var marker = new BMap.Marker(point);        // 创建标注    
+    map.addOverlay(marker);
+    var label = new BMap.Label('上海萃领管理咨询有限公司', {
+      offset: new BMap.Size(-70, 1),
+      position: point
+    });
+    label.setStyle({
+      border: '1px solid #000',
+      cursor: 'pointer'
+    })
+    label.setTitle("上海萃领")
+    map.addOverlay(label)
+  </script>
 </body>
 
 </html>
