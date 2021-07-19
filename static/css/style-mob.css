@@ -23,10 +23,10 @@ html {
   padding: 0;
   border: none;
 }
-img,
+/* img,
 iframe img {
   max-width: 100% !important;
-}
+} */
 .hide {
   display: none !important;
 }
