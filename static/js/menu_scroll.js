@@ -115,7 +115,7 @@ window.onload = function () {
     aLi[i].onmouseover = function () {
       clearTimeout(timer);
       flex(oDiv, { left: oDiv.offsetLeft }, { left: this.offsetLeft }, function (now) {
-        oDiv.style.left = Math.round(now.left + 8) + 'px';
+        oDiv.style.left = Math.round(now.left + 14) + 'px';
       });
       //oDiv.style.left=this.offsetLeft-3+'px';
     };
